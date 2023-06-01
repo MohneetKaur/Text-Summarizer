@@ -43,7 +43,7 @@ for filepath in list_of_files:
     else:
         logging.info(f"{filename} already exists")
 
-#In Git Bash:
-# git add .
-# git commit -m *folder structure added*
-
+# In Git Bash:
+# Step 1: git add .
+# Step 2: git commit -m *folder structure added*
+# Step 3: git push origin main
