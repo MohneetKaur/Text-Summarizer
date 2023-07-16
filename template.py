@@ -14,6 +14,7 @@ list_of_files = [
     f"src/{project_name}/utils/common.py",
     f"src/{project_name}/logging/__init__.py",
     f"src/{project_name}/config/__init__.py",
+    f"src/{project_name}/config/configuration.py",
     f"src/{project_name}/pipeline/__init__.py",
     f"src/{project_name}/entity/__init__.py",
     f"src/{project_name}/constants/__init__.py",
@@ -29,7 +30,7 @@ list_of_files = [
 
 for filepath in list_of_files:
     filepath = Path(filepath)
-    filedir, filename = str(filepath.parent), filepath.name
+    filedir, filename = os.path.split(filepath)
 
     if filedir != "":
         os.makedirs(filedir, exist_ok=True)
